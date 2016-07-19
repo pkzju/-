@@ -1,0 +1,90 @@
+Design and Implementation of Fan Cluster Monitoring System Based on Embedded Linux and Qt Technology
+
+Abstract
+
+Keywords: Embedded Linux,  ARM Cortex-A8, Qt, Modbus, CANopen.
+
+1.Introduction
+
+am335X
+
+embeded linux
+
+qt
+
+canopen modbus
+
+伴随着信息技术的高速发展,
+集群化实时可视化监控系统越来越广泛地应用于各个领域，
+在矿井、地铁等这种对通风系统要求严格的环境下，
+为了确保风机群长时间安全、可靠、有效地运行，
+设计一个低功耗、低成本、安全稳定的风机群设备实时监控系统
+具有非常重要的意义[1]。
+
+文献[2]针对矿机通风系统，采用基于PLC与OPC（OLE for Process Control）通信技术的的风机监控系统方案，
+功能完整、稳定性好，
+但该系统是两层网络架构，覆盖范围较小，且PLC控制柜价格昂贵，功耗高，灵活性低，难以应用于监控大面积的风机群，
+文献[3]针对电厂引风机系统，采用基于嵌入式与WiFi通信技术的风机监控系统方案，
+成本低、实时性较好，
+但该系统在操作系统中使用Web服务搭建人机交互接口，不太适应于对安全性要求较高的工业领域
+
+近年来，基于流行的ARM处理器的嵌入式Linux系统作为一种
+高性能的嵌入式系统平台受到了越来越多的关注[2]
+采用带以太网与CAN技术的工业级ARM处理器作为监控系统的主机是非常合适的选择。
+可视化Qt
+
+底层采用CANopen与Modbus两种应用广泛的国际标准协议管理风机节点，
+上层采用TCP/IP通信技术实现集中式远程管理，
+并运用越来越火热的跨平台Qt技术设计安全美观的GUI应用程序，
+最后实现了一套低成本、低功耗、安全稳定的风机群实时可视化监控系统。
+一套低成本、低功耗、多总线兼容、安全稳定的风机群实时可视化监控系统。
+
+In recent years, embedded Linux has been
+receiving a lot of attention as a viable, low cost and
+robust implementation platform for high performance
+embedded systems based on popular ARM
+microprocessors [2]. 
+
+具有低功耗、实时等特性的嵌入式系统被广泛应用以工业领域中，其中
+Embedded systems are frequently used in…… due to their lower power requirements……
+
+
+风机群组是矿井、地铁等对通风系统要求严格的领域
+的关键设备之一，
+，它的安全与高效运转是保证煤矿正常工作的前提条
+件之一
+在生产中曾发生因滚动轴承严
+重损坏、电机抱轴而被迫停车检修的情况，影响了
+正常生产，造成了很大的经济损失。因此建立风
+机机组在线状态监测与控制系统，实时地进行轴
+承状态数据的监测、报警判断、联锁判断，有效地
+防止滚动轴承故障的发生，确保风机机组长周期
+安全、可靠、有效地运行，具有重大的经济效益和
+现实意义。为此我们研制了 (.(+$ 型风机机组
+群在线监测与控制系统。
+
+开发一款成本低廉、功能齐全、跨平台的轻量级组态软件具有非常重要的意义
+
+
+
+2.System Architecture/Description / Design / 
+ 
+3.System core design / Design of Embedded Communication Server   
+
+3.1.Development Environment Set-up
+
+3.2.Qt Application Design
+
+4.Implementation Details
+
+5.Conclusions
+
+Mendeley 账号:qq邮箱 393……
+
+
+[1] Lv Haidong, Lu Yonglin. Design of asynchronous reactive cluster real-time monitoring system[J].Application of
+Electronic Technique,2016,42(2):74-77.
+[1] 吕海东, 陆永林. 异步响应式集群实时监控系统设计[J]. 电子技术应用, 2016, 42(2): 74-77.
+
+
+Mclaughlin B. BeagleBone Black Primer[J]. 2015.
